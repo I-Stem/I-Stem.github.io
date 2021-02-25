@@ -9,10 +9,6 @@ module.exports = {
   organizationName: 'I-Stem', 
   projectName: 'I-Stem.github.io',
   themeConfig: {
-announcementBar: {
-id: "wip",
-content: "This is a work in progress. we are working hard to give these docs a shape which is developer friendly. Contributions are very much welcome."
-},
 navbar: {
 title: "I-Stem Projects",
 items : [{
