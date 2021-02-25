@@ -7,7 +7,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'I-Stem', 
-  projectName: 'I-Stem',
+  projectName: 'I-Stem.github.io',
   themeConfig: {
 announcementBar: {
 id: "wip",
