@@ -4,6 +4,12 @@ title: Docs Writing Guide
 
 This ever-evolving guide provides some rules and recommendations on how to.
 
+## Where to put information?
+
+   * Getting started guides/setup instructions: The setup instructions for a repo should live in the top-level README.md file of the corresponding repo. 
+   * API Documentation: The automatically generated API documentation for http APIs and component level documentation for frontend components should live in the corresponding repo static documentation generator directory. So that the documentation changes could be picked up and deployed with successful automated build and deploys.
+   * Guide on generic how-to: All the changes related to code of conduct, template for different documentation constructs should live within the I-Stem organization repo.
+
 ## Principles
 
 - **A feature doesn't exist until it's well documented.**

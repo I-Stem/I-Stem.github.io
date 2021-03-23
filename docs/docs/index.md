@@ -10,7 +10,7 @@ At I-Stem, our vision is to empower students and professionals with disabilities
 
 ## Our Solutions
 
-   We aim to build disruptive accommodation services portal for people with disabilities using latest advancements in AI technologies under different social settings, be it educational institutes having student with disabilities, businesses having employees with disabilities or day-to-day life of individuals with disability  . Our current solution consist of online web portal hosted [here](https://portal.istemai.com). Go [here](https://istemai.com) to know more about the services that we are building.
+   We aim to build disruptive accommodation services portal for people with disabilities using latest advancements in AI technologies under different social settings, be it educational institutes having student with disabilities, businesses having employees with disabilities or day-to-day life of individuals with disability  . Our current solution consist of online web portal hosted [here](https://portal.istemai.com). Go [here](https://www.istemai.com) to know more about the services that we are building.
 
 ### Want to Help us build the accommodation services?
 
