@@ -1,0 +1,12 @@
+module.exports = {
+"contributing": [
+{
+type: 'category',
+label: 'Contributing Guidelines',
+items : [
+"contributing/index",
+"contributing/code_of_conduct"
+]
+}
+]
+};
