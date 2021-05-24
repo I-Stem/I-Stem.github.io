@@ -18,17 +18,35 @@ const features = [
           students with certain other learning disabilities)
         </p>
 
-        <h6>✔Support for printed or handwritten content</h6>
-        <h6>
-          ✔ Advance formatting support (two column layouts, tables, headings
-          etc.)
-        </h6>
-        <h6>✔Support for STEM-based content</h6>
-        <h6>✔PDF remediation</h6>
-        <h6>✔Download docs, accessible PDF, HTML or MP3 formats</h6>
-        <h6>
-          ✔Escalation of documents for manual remediation in case of any errors
-        </h6>
+        <div className={styles.flex}>
+          <span className={styles.check}>&#x2713;</span>
+          <h6>Support for printed or handwritten content</h6>
+        </div>
+        <div className={styles.flex}>
+          <span className={styles.check}>&#x2713;</span>
+          <h6>
+            Advance formatting support (two column layouts, tables, headings
+            etc.)
+          </h6>
+        </div>
+        <div className={styles.flex}>
+          <span className={styles.check}>&#x2713;</span>
+          <h6>Support for STEM-based content</h6>
+        </div>
+        <div className={styles.flex}>
+          <span className={styles.check}>&#x2713;</span>
+          <h6>PDF remediation</h6>
+        </div>
+        <div className={styles.flex}>
+          <span className={styles.check}>&#x2713;</span>
+          <h6>Download docs, accessible PDF, HTML or MP3 formats</h6>
+        </div>
+        <div className={styles.flex}>
+          <span className={styles.check}>&#x2713;</span>
+          <h6>
+            Escalation of documents for manual remediation in case of any errors
+          </h6>
+        </div>
 
         <ul className={styles.btnList}>
           <li>
@@ -54,17 +72,29 @@ const features = [
           High quality AI-powered automated captions and text extraction from
           audio/videos
         </p>
-        <h6>
-          ✔ Support for domain-specific custom captioning (e.g. a History
-          student can train our models on their History textbook for accurate
-          identification of non-standard History-specific terminology)
-        </h6>
-        <h6>✔Text extraction from videos</h6>
-        <h6>✔Ability to organize audio/video files using tags</h6>
-        <h6>
-          ✔ Escalation of video captions or extracted text for manual
-          remediation in case of errors
-        </h6>
+        <div className={styles.flex}>
+          <span className={styles.check}>&#x2713;</span>
+          <h6>
+            Support for domain-specific custom captioning (e.g. a History
+            student can train our models on their History textbook for accurate
+            identification of non-standard History-specific terminology)
+          </h6>
+        </div>
+        <div className={styles.flex}>
+          <span className={styles.check}>&#x2713;</span>
+          <h6>Text extraction from videos</h6>
+        </div>
+        <div className={styles.flex}>
+          <span className={styles.check}>&#x2713;</span>
+          <h6>Ability to organize audio/video files using tags</h6>
+        </div>
+        <div className={styles.flex}>
+          <span className={styles.check}>&#x2713;</span>
+          <h6>
+            Escalation of video captions or extracted text for manual
+            remediation in case of errors
+          </h6>
+        </div>
 
         <ul className={styles.btnList}>
           <li>
@@ -119,17 +149,33 @@ function Sponsor({imageUrl, title}) {
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('row col--6', styles.feature)}>
-      <div className={clsx('col', styles.featureText)}>
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-      {imgUrl && (
-        <div className="col text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+    <>
+      {title === 'Document Accessibility' ? (
+        <div className={clsx('row col--6', styles.feature)}>
+          <div className={clsx('col', styles.featureText)}>
+            <h3>{title}</h3>
+            <p>{description}</p>
+          </div>
+          {imgUrl && (
+            <div className="col text--center">
+              <img className={styles.featureImage} src={imgUrl} alt={title} />
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className={clsx('row col--6', styles.feature)}>
+          {imgUrl && (
+            <div className="col text--center">
+              <img className={styles.featureImage} src={imgUrl} alt={title} />
+            </div>
+          )}
+          <div className={clsx('col', styles.featureText)}>
+            <h3>{title}</h3>
+            <p>{description}</p>
+          </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
@@ -141,7 +187,7 @@ function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <header className={clsx('hero ', styles.heroBanner)}>
         <div className="container">
           <h1 className={styles.heroProjectTagline}>
             {/* <img
@@ -150,55 +196,54 @@ function Home() {
               src={useBaseUrl('/img/istem/istem_logo.png')}
             /> */}
             <span className={styles.heroTitleTextHtml}>
-              <br></br>
-              <b>{siteConfig.title}</b>
-              <br></br>
-              <small>{siteConfig.tagline}</small>
-              <br></br>
+              <h1>{siteConfig.tagline}</h1>
               <div className={styles.buttons}>
                 <Link
                   className={clsx('button button--primary button--lg')}
                   to={useBaseUrl('docs/getting-started')}
                 >
-                  <span className={styles.getStartedBtn}>Getting Started</span>
+                  <span className={styles.getStartedBtn}>Read the docs</span>
                 </Link>
               </div>
             </span>
           </h1>
         </div>
       </header>
-
+      <br />
       <main>
         <div
-          className={styles.content}
+          className={(styles.content, 'row')}
           // style={{width: '70%', marginLeft: '10rem'}}
         >
-          <h2>Our Vision</h2>
-          <p>
-            There are over 1.3 billion people with disabilities around the
-            world.
-          </p>
-          <p>
-            Despite legislative measures and assistive technologies, there
-            continues to be a big gap in education and employment opportunities
-            for people with disabilities.
-          </p>
-          <p>
-            Inaccessibility of study and professional material and lack of
-            awareness are primary challenges.
-          </p>
-          <p>
-            Recent advances in technology, however, makes it possible for people
-            with disabilities to pursue several careers on an equal basis as
-            others.
-          </p>
-          <p>
-            <em>
-              At I-Stem, our vision is to empower students and professionals
-              with disabilities to realize their potential by enabling equal
-              access to information, resources and opportunities.
-            </em>
-          </p>
+          <div className="col col--3"></div>
+          <div className="col col--6">
+            <h2>Our Vision</h2>
+            <p>
+              There are over 1.3 billion people with disabilities around the
+              world.
+            </p>
+            <p>
+              Despite legislative measures and assistive technologies, there
+              continues to be a big gap in education and employment
+              opportunities for people with disabilities.
+            </p>
+            <p>
+              Inaccessibility of study and professional material and lack of
+              awareness are primary challenges.
+            </p>
+            <p>
+              Recent advances in technology, however, makes it possible for
+              people with disabilities to pursue several careers on an equal
+              basis as others.
+            </p>
+            <p>
+              <em>
+                At I-Stem, our vision is to empower students and professionals
+                with disabilities to realize their potential by enabling equal
+                access to information, resources and opportunities.
+              </em>
+            </p>
+          </div>
         </div>
         <div className={styles.content}>
           <h2>Our Solutions</h2>
