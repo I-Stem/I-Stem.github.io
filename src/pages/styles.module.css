@@ -42,8 +42,12 @@
 }
 
 .featureImage {
-  height: 300px;
-  width: 300px;
+  /* height: 300px; */
+  width: 100%;
+}
+
+.featureText {
+  text-align: left;
 }
 
 .sponsorImage {
@@ -56,7 +60,6 @@
   margin-top: 50%;
   margin-bottom: -20%;
   transform: translateY(-50%);
-  
 }
 
 .sponsorList {
@@ -72,7 +75,7 @@
 .heroLogo {
   animation-duration: 1s;
   animation-name: jackInTheBox;
-  float: left ;
+  float: left;
   margin-top: 20px;
   padding: 0 20px 20px;
 }
@@ -119,6 +122,7 @@
   width: 100%;
   margin: 0 auto;
   vertical-align: middle;
+  background-color: #000;
 
   /* max-width: 768px; */
 }
@@ -133,4 +137,33 @@
 
 .teamMemberImg {
   border-radius: 50%;
+}
+.content {
+  padding: 1rem;
+  width: 90%;
+  margin-left: 5rem;
+}
+
+.detailsBtn {
+  padding: 1rem 4rem;
+  background-color: #3949ab;
+  color: #fff;
+  width: 260px;
+  margin-left: 1rem;
+  border-radius: 4px;
+  margin: 1rem;
+}
+.tryBtn {
+  padding: 1rem 4rem;
+  background-color: #008a5a;
+  color: #fff;
+  width: 260px;
+  border-radius: 4px;
+  margin: 1rem;
+}
+.btnList {
+  list-style: none;
+  display: flex;
+  margin-top: 2rem;
+  margin-left: -2rem;
 }

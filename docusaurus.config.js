@@ -1,12 +1,13 @@
 module.exports = {
   title: 'I-Stem',
-  tagline: 'Empowering people with disabilities using technology, community and support services',
+  tagline:
+    'Empowering people with disabilities using technology, community and support services',
   url: 'https://I-Stem.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'I-Stem', 
+  organizationName: 'I-Stem',
   projectName: 'I-Stem.github.io',
   themeConfig: {
     navbar: {
@@ -25,7 +26,7 @@ module.exports = {
         {
           href: 'https://github.com/i-stem',
           position: 'right',
-//          className: 'header-github-link',
+          //          className: 'header-github-link',
           label: 'GitHub Profile',
         },
       ],
@@ -33,6 +34,16 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
+        {
+          title: 'Contact us',
+          items: [
+            {
+              label: 'info@inclusivestem.org',
+              href: 'mailto:info@inclusivestem.org ',
+              favicon: '',
+            },
+          ],
+        },
         {
           title: 'Follow us',
           items: [
@@ -47,12 +58,12 @@ module.exports = {
           ],
         },
       ],
-      logo: {
-        alt: 'I-Stem Logo',
-        src: 'img/istem/istem_logo.png',
-        href: 'https://istemai.com',
-      },
-      copyright: `Copyright © ${new Date().getFullYear()} I-Stem, Built with Docusaurus.`,
+      // logo: {
+      //   alt: 'I-Stem Logo',
+      //   src: 'img/istem/istem_logo.png',
+      //   href: 'https://istemai.com',
+      // },
+      copyright: `© 2021 I-Stem. All Rights Reserved. <a href="istem_privacy_policy.html" style="text-decoration: underline;"> Privacy policy and Terms of Service</a>`,
     },
   },
   presets: [
@@ -60,15 +71,15 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-path: 'docs',
+          path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
-include: ['**/*.md', '**/*.mdx'], // Extensions to include.
-//routeBasePath: '/'
+          include: ['**/*.md', '**/*.mdx'], // Extensions to include.
+          //routeBasePath: '/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-blog: false,
+        blog: false,
       },
     ],
   ],
