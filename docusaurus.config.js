@@ -63,7 +63,7 @@ module.exports = {
       //   src: 'img/istem/istem_logo.png',
       //   href: 'https://istemai.com',
       // },
-      copyright: `© 2021 I-Stem. All Rights Reserved. <a href="istem_privacy_policy.html" style="text-decoration: underline;"> Privacy policy and Terms of Service</a>`,
+      copyright: `© 2021 I-Stem. All Rights Reserved. `,
     },
   },
   presets: [

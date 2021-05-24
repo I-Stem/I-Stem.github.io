@@ -17,7 +17,7 @@ We really want to hear about them, let us know:
 
 ## Are you a developer?
 
-   Are you interested in what we do and want to help us in achieving our vision? Please have a look [here](introduction) to know more about the technical components that we have and how they are designed to solve the problem.
+   Are you interested in what we do and want to help us in achieving our vision? or Found something buggy? Please have a look [here](introduction) to know more about the technical components that we have,  how they are designed to solve the problem and how to report issues.
 
 ## See an issue with our documentation?
 
