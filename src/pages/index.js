@@ -55,7 +55,7 @@ const features = [
             </a>
           </li>
           <li>
-            <a className={styles.detailsBtn} href="details">
+            <a className={styles.detailsBtn} href="https://www.istemai.com/DocumentAccessibility.html">
               View Details
             </a>
           </li>
@@ -103,7 +103,7 @@ const features = [
             </a>
           </li>
           <li>
-            <a className={styles.detailsBtn} href="details">
+            <a className={styles.detailsBtn} href="https://www.istemai.com/AVaccessibility.html">
               View Details
             </a>
           </li>
