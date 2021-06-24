@@ -20,16 +20,24 @@ module.exports = {
         {
           to: 'docs/getting-started',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Getting-started with Docs',
           position: 'left',
         },
+        {
+          label: 'Science Repo API Docs',
+href: "https://science.readthedocs.io"
+},
+{
+label: "Backend API Docs",
+href: "https://i-stem.github.io/backend",
+},
         {
           href: 'https://github.com/i-stem',
           position: 'right',
           //          className: 'header-github-link',
           label: 'GitHub Profile',
-        },
-      ],
+        }
+      ]
     },
     footer: {
       style: 'dark',
