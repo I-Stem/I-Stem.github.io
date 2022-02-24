@@ -26,7 +26,7 @@ This repo is written in express.js/typescript and contains the logic for onboard
 
 ### Frontend repo
 
-   The repo is written in next.js/typescript and contains all the accessible UI components that I-Stem web app uses. For a local setup of repo please see the latest [README](https://github.com/I-Stem/frontend) here.
+   The repo is written in next.js/typescript and contains all the accessible UI components that I-Stem web app uses. For a local setup of repo please see the latest [README](https://github.com/I-Stem/frontend) here. And before you even look at the repo, here is the additional motivation for you to look: The repo contains implementation of accessible single-select and multi-select dropdown components which are otherwise hard to find on web. :) Thanks us later for this!
 
 ## Contribution Guidelines and Code of Conduct
 
